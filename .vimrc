@@ -1,5 +1,6 @@
-" set LineNr ctermbg=gray
-" set cursorline
+let mapleader=","
+
+" The basic stuff.
 syntax on
 set tabstop=4
 set shiftwidth=4
@@ -12,10 +13,11 @@ set mouse=a
 set wildmode=longest,list,full
 set wildmenu
 set spelllang=en_us
+
+" Indicate the 80 column mark.
+set colorcolumn=80
+
+" This is pretty annoying for small files,
+" but useful for big ones with classes, etc.
 " set foldmethod=indent
 " set foldnestmax=2
-" set colorcolumn=80
-colorscheme desert
-" set colorcolumn=80
-
-let mapleader=","

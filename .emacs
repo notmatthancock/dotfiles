@@ -14,6 +14,7 @@
 (setq org-confirm-babel-evaluate nil)
 
 
+;; Mark column 80.
 (add-to-list 'load-path "~/.emacs.d/fill-column-indicator/")
 (require 'fill-column-indicator)
 (define-globalized-minor-mode global-fci-mode fci-mode (lambda () (fci-mode 1)))

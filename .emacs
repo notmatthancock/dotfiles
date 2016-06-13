@@ -10,4 +10,12 @@
  '((python . t) (sh . t) (C . t))
 )
 
+;; Remove confirm message for org mode code block evaluation.
 (setq org-confirm-babel-evaluate nil)
+
+
+(add-to-list 'load-path "~/.emacs.d/fill-column-indicator/")
+(require 'fill-column-indicator)
+(define-globalized-minor-mode global-fci-mode fci-mode (lambda () (fci-mode 1)))
+(global-fci-mode 1)
+(setq fci-rule-column 80)

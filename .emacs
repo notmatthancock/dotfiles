@@ -1,5 +1,6 @@
-;; Line numbers
+;; Line and column numbers
 (global-linum-mode t)
+(setq column-number-mode t)
 
 ;; Disable welcome screen
 (setq inhibit-startup-message t)

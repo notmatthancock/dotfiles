@@ -15,7 +15,7 @@ set wildmenu
 set spelllang=en_us
 
 " Indicate the 80 column mark.
-set colorcolumn=80
+" set colorcolumn=80
 
 " This is pretty annoying for small files,
 " but useful for big ones with classes, etc.

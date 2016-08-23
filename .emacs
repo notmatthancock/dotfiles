@@ -42,6 +42,12 @@
 (elpy-enable)
 (elpy-use-ipython)
 
+;; M-x run-python for ipython interpreter.
+(when (executable-find "ipython")
+ (setq python-shell-interpreter "ipython"))
+
+
+
 ;; Theme
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -61,18 +67,3 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "DejaVu Sans Mono" :foundry "PfEd" :slant normal :weight normal :height 128 :width normal)))))
-
-;; (defun my-results (fixed-width contents info)
-;;   "Transform a results block to make it more visible."
-;;     (let ((results (org-element-property :results fixed-width))
-;;         (format (elt (plist-get info :back-end) 2))
-;;             (value (org-element-property :value fixed-width)))
-;;         (cond 
-;;              ((eq 'html format)
-;;                    (format "<pre>Output:<br> %s</pre>" value)))))
-;; 
-;; 
-;; (org-export-define-derived-backend 'my-html 'html
-;;   :translate-alist '((fixed-width . my-results)))
-;; 
-;; (browse-url (org-export-to-file 'my-html (concat (file-name-base (buffer-file-name)) ".html")))

@@ -36,10 +36,9 @@
 ;; Evil tabs.
 (global-evil-tabs-mode t)
 
-(require 'ox-beamer)
-
-(require 'ox-reveal)
-(setq org-reveal-root "file:///home/matt/local/code/scratch/reveal.js")
+;; (require 'ox-beamer)
+;; (require 'ox-reveal)
+;; (setq org-reveal-root "file:///home/matt/local/code/scratch/reveal.js")
 
 ;; Column indicator at at the 80 mark.
 (require 'fill-column-indicator)
@@ -51,6 +50,12 @@
 (require 'elpy)
 (elpy-enable)
 (elpy-use-ipython)
+
+;; M-x run-python for ipython interpreter.
+(when (executable-find "ipython")
+ (setq python-shell-interpreter "ipython"))
+
+
 
 ;; Theme
 (custom-set-variables

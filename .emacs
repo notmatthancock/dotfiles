@@ -31,10 +31,9 @@
 (require 'evil)
 (evil-mode 1)
 
-(require 'ox-beamer)
-
-(require 'ox-reveal)
-(setq org-reveal-root "file:///home/matt/local/code/scratch/reveal.js")
+;; (require 'ox-beamer)
+;; (require 'ox-reveal)
+;; (setq org-reveal-root "file:///home/matt/local/code/scratch/reveal.js")
 
 ;; Column indicator at at the 80 mark.
 (require 'fill-column-indicator)

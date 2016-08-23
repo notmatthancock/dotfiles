@@ -21,7 +21,7 @@
 ;; Org mode languages
 (org-babel-do-load-languages
  'org-babel-load-languages
- '((python . t) (sh . t) (C . t))
+ '((python . t) (sh . t) (C . t) (fortran . t))
 )
 
 ;; Remove confirm message for org mode code block evaluation.
@@ -30,6 +30,11 @@
 ;; Evil mode.
 (require 'evil)
 (evil-mode 1)
+
+(require 'ox-beamer)
+
+(require 'ox-reveal)
+(setq org-reveal-root "file:///home/matt/local/code/scratch/reveal.js")
 
 ;; Column indicator at at the 80 mark.
 (require 'fill-column-indicator)

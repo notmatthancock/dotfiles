@@ -5,6 +5,9 @@
 ;; Disable welcome screen
 (setq inhibit-startup-message t)
 
+;; Spaces, not tabs.
+(setq-default indent-tabs-mode nil)
+
 ;; Show matching parens.
 (show-paren-mode 1)
 
@@ -30,6 +33,8 @@
 ;; Evil mode.
 (require 'evil)
 (evil-mode 1)
+;; Evil tabs.
+(global-evil-tabs-mode t)
 
 (require 'ox-beamer)
 

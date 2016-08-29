@@ -37,8 +37,8 @@
 (global-evil-tabs-mode t)
 
 (require 'ox-beamer)
-(require 'ox-reveal)
-(setq org-reveal-root "file:///home/matt/local/code/scratch/reveal.js")
+;; (require 'ox-reveal)
+;; (setq org-reveal-root "file:///home/matt/local/code/scratch/reveal.js")
 
 ;; Column indicator at at the 80 mark.
 (require 'fill-column-indicator)

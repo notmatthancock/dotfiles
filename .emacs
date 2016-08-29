@@ -76,3 +76,14 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "DejaVu Sans Mono" :foundry "PfEd" :slant normal :weight normal :height 128 :width normal)))))
+
+
+
+;; (defun org-html-template-around (org-fun &rest args)
+;;   (let ((content (car args))
+;;           (info (cadr args)))
+;;       (apply org-fun (list (concat "<div id=\"wrapper-div\">"
+;;                                    content
+;;                                                                 "</div>")
+;;                                info))))
+;; (advice-add 'org-html-template :around #'org-html-template-around)

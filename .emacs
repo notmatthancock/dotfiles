@@ -36,9 +36,9 @@
 ;; Evil tabs.
 (global-evil-tabs-mode t)
 
-;; (require 'ox-beamer)
-;; (require 'ox-reveal)
-;; (setq org-reveal-root "file:///home/matt/local/code/scratch/reveal.js")
+(require 'ox-beamer)
+(require 'ox-reveal)
+(setq org-reveal-root "file:///home/matt/local/code/scratch/reveal.js")
 
 ;; Column indicator at at the 80 mark.
 (require 'fill-column-indicator)
@@ -68,7 +68,7 @@
  '(ansi-color-names-vector
    ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
  '(column-number-mode t)
- '(custom-enabled-themes (quote (tsdh-dark)))
+ '(custom-enabled-themes (quote (tsdh-light)))
  '(show-paren-mode t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

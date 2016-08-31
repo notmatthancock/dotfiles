@@ -11,6 +11,10 @@
 ;; Show matching parens.
 (show-paren-mode 1)
 
+;; Scroll one line at a time and stuff.
+(setq mouse-wheel-scroll-amount '(1 ((shift) . 1) ((control) . nil)))
+(setq mouse-wheel-progressive-speed nil)
+
 ;; Change backup file dir.
 (setq backup-directory-alist `(("." . "~/.emacs.backup")))
 (setq backup-by-copying t)

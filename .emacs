@@ -59,6 +59,15 @@
 (when (executable-find "ipython")
  (setq python-shell-interpreter "ipython"))
 
+;; This could be used for making custom templates for org-mode html export.
+;; (defun org-html-template-around (org-fun &rest args)
+;;   (let ((content (car args))
+;;           (info (cadr args)))
+;;       (apply org-fun (list (concat "<div id=\"wrapper-div\">"
+;;                                    content
+;;                                                                 "</div>")
+;;                                info))))
+;; (advice-add 'org-html-template :around #'org-html-template-around)
 
 
 ;; Theme
@@ -72,7 +81,7 @@
  '(ansi-color-names-vector
    ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
  '(column-number-mode t)
- '(custom-enabled-themes (quote (tsdh-light)))
+ '(custom-enabled-themes (quote (whiteboard)))
  '(show-paren-mode t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -82,12 +91,3 @@
  '(default ((t (:family "DejaVu Sans Mono" :foundry "PfEd" :slant normal :weight normal :height 128 :width normal)))))
 
 
-
-;; (defun org-html-template-around (org-fun &rest args)
-;;   (let ((content (car args))
-;;           (info (cadr args)))
-;;       (apply org-fun (list (concat "<div id=\"wrapper-div\">"
-;;                                    content
-;;                                                                 "</div>")
-;;                                info))))
-;; (advice-add 'org-html-template :around #'org-html-template-around)

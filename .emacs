@@ -7,6 +7,8 @@
 
 ;; Spaces, not tabs.
 (setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
+(defvaralias 'c-basic-offset 'tab-width)
 
 ;; Show matching parens.
 (show-paren-mode 1)
@@ -81,7 +83,7 @@
  '(ansi-color-names-vector
    ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
  '(column-number-mode t)
- '(custom-enabled-themes (quote (whiteboard)))
+ '(custom-enabled-themes (quote (dichromacy)))
  '(show-paren-mode t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

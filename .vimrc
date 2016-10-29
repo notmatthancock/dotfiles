@@ -13,6 +13,7 @@ set mouse=a
 set wildmode=longest,list,full
 set wildmenu
 set spelllang=en_us
+set display=lastline " for long lines.
 
 " Indicate the 80 column mark.
 " set colorcolumn=80

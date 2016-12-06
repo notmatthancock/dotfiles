@@ -2,7 +2,7 @@
 export editor=vim
 export PS1=$'\[\033[01;32m\]\@\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\] \$ '
 export LOCAL=$HOME/local
-export PYTHONPATH=$PYTHONPATH:$LOCAL/code:$HOME/Dropbox/grad/research/code:$LOCAL/code/pylidc
+export PYTHONPATH=$PYTHONPATH:$LOCAL/code:$HOME/Dropbox/grad/research/code:$LOCAL/code/pylidc:$LOCAL/code/pyresume
 export ETS_TOOLKIT=qt4 # For mayavi?
 export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:$HOME/Dropbox/include
 

@@ -1,0 +1,20 @@
+from prompt_toolkit.filters import ViInsertMode
+from prompt_toolkit.key_binding.input_processor import KeyPress
+import six
+
+__all__ = ('configure',)
+
+def configure(editor):
+    editor.show_line_numbers = True
+    
+    editor.highlight_search = True
+    editor.ignore_case = True
+    
+    editor.expand_tab = True
+    editor.tabstop = 4
+    
+    editor.display_unprintable_characters = True
+    
+    editor.enable_jedi = True
+    
+    editor.use_colorscheme('paraiso-dark')

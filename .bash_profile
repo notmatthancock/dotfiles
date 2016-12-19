@@ -1,5 +1,5 @@
 # Exports.
-export editor=vim
+export editor=pyvim
 export PS1=$'\[\033[01;32m\]\@\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\] \$ '
 export LOCAL=$HOME/local
 export PYTHONPATH=$PYTHONPATH:$LOCAL/code:$HOME/Dropbox/grad/research/code:$LOCAL/code/pylidc:$LOCAL/code/pyresume:$LOCAL/code/smoothfuncs/
@@ -7,6 +7,7 @@ export ETS_TOOLKIT=qt4 # For mayavi?
 export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:$HOME/Dropbox/include
 
 # Aliases.
+alias vim='pyvim'
 alias ipython='ipython --pylab'
 alias reload-bashrc='source $HOME/.bashrc'
 alias rm='rm -i $1'

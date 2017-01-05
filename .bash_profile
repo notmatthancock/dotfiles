@@ -9,6 +9,7 @@ export QT_API=pyside
 
 # Aliases.
 alias ipython='ipython --pylab'
+alias ipy='ipython'
 alias reload-bashrc='source $HOME/.bashrc'
 alias rm='rm -i $1'
 alias mathssh='ssh -X mhancock@henri.math.fsu.edu'

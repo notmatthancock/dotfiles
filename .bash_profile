@@ -9,7 +9,6 @@ export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:$HOME/Dropbox/include
 export QT_API=pyside
 
 # Aliases.
-alias weather='curl wttr.in/tallahasse'
 alias ipython='ipython --pylab'
 alias ipy='ipython'
 alias reload-bashrc='source $HOME/.bashrc'

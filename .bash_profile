@@ -1,7 +1,7 @@
 # Exports.
 export editor=vim
 #export PS1=$'\[\033[01;32m\]\@\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\] \$ '
-export PS1=$'\033[48;5;221;38;5;237m \@ \033[0m:\[\033[01;34m\]\W\[\033[00m\] \$ '
+export PS1=$'\[\033[48;5;221;38;5;237m\] \@ \[\033[0m\]:\[\033[01;34m\]\W\[\033[00m\] \$ '
 export LOCAL=$HOME/local
 export PYTHONPATH=$PYTHONPATH:$LOCAL/code:$HOME/Dropbox/grad/research/code:$LOCAL/code/pylidc:$LOCAL/code/pyresume:$LOCAL/code/smoothfuncs/
 export ETS_TOOLKIT=qt4 # For mayavi?

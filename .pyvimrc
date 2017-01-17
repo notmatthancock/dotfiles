@@ -13,4 +13,4 @@ def configure(editor):
     
     editor.enable_jedi = True
     
-    editor.use_colorscheme('paraiso-dark')
+    #editor.use_colorscheme('paraiso-dark')

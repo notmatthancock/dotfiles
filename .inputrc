@@ -1,2 +1,7 @@
 "\e[A":history-search-backward
 "\e[B":history-search-forward
+
+"\e[1;5A":beginning-of-line
+"\e[1;5B":end-of-line
+"\e[1;5C":forward-word
+"\e[1;5D":backward-word

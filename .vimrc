@@ -14,6 +14,8 @@ set wildmenu
 set spelllang=en_us
 set display=lastline " for long lines.
 
+hi Visual cterm=NONE ctermfg=black ctermbg=yellow
+
 " Indicate the 80 column mark.
 " set colorcolumn=80
 

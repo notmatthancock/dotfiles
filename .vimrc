@@ -17,6 +17,7 @@ set display=lastline " for long lines.
 " Set visual highlight yellow
 hi Visual cterm=NONE ctermfg=black ctermbg=yellow
 
+" Set background color of current line.
 set cursorline
 hi CursorLine cterm=NONE ctermfg=NONE ctermbg=255
 

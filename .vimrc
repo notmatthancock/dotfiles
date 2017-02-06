@@ -19,7 +19,7 @@ hi Visual cterm=NONE ctermfg=black ctermbg=yellow
 
 " Set background color of current line.
 set cursorline
-hi CursorLine cterm=NONE ctermfg=NONE ctermbg=255
+hi CursorLine cterm=NONE ctermfg=NONE ctermbg=230
 
 " Indicate the 80 column mark.
 " set colorcolumn=80

@@ -24,7 +24,7 @@ alias cpwd='pwd | xargs echo -n | pbcopy'
 alias scratch='cd $LOCAL/code/scratch'
 
 # Do virtualenv stuff if it exists.
-if [ -n "`type -t virtualenv`" ]; then
-    export WORKON_HOME=$HOME/.virtualenvs
-    source /usr/local/bin/virtualenvwrapper_lazy.sh
-fi
+#if [ -n "`type -t virtualenv`" ]; then
+#    export WORKON_HOME=$HOME/.virtualenvs
+#    source /usr/local/bin/virtualenvwrapper_lazy.sh
+#fi

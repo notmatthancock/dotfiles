@@ -21,8 +21,11 @@ hi Visual cterm=NONE ctermfg=black ctermbg=yellow
 set cursorline
 hi CursorLine cterm=NONE ctermfg=NONE ctermbg=230
 
+" Set fortran highlighting to free source, not fixed.
+let fortran_free_source=1
+
 " Indicate the 80 column mark.
-" set colorcolumn=80
+set colorcolumn=80
 
 " This is pretty annoying for small files,
 " but useful for big ones with classes, etc.

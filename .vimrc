@@ -22,7 +22,7 @@ hi Visual cterm=NONE ctermfg=black ctermbg=yellow
 
 " Set background color of current line.
 set cursorline
-hi CursorLine cterm=NONE ctermfg=NONE ctermbg=239
+"hi CursorLine cterm=NONE ctermfg=NONE ctermbg=239
 
 " Set fortran highlighting to free source, not fixed.
 let fortran_free_source=1

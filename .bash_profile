@@ -5,7 +5,7 @@ export LOCAL=$HOME/local
 export PYTHONPATH=$PYTHONPATH:$LOCAL/code:$HOME/Dropbox/grad/research/code:$LOCAL/code/pylidc
 export ETS_TOOLKIT=qt4 # For mayavi?
 export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:$HOME/Dropbox/include
-export QT_API=pyqt # change to pyside for mayavi with ipython for some reason
+export QT_API=pyside # change to pyside for mayavi with ipython for some reason
 
 # Aliases.
 alias ipython='ipython --pylab'

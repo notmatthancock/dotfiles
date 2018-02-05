@@ -23,6 +23,11 @@ alias pbpaste='xclip -selection clipboard -o'
 alias cpwd='pwd | xargs echo -n | pbcopy'
 alias scratch='cd $LOCAL/code/scratch'
 
+if [ $HOSTNAME = "matt-asus" ]; then
+    synclient AreaLeftEdge=100
+    synclient AreaRightEdge=1100
+fi
+
 # Do virtualenv stuff if it exists.
 #if [ -n "`type -t virtualenv`" ]; then
 #    export WORKON_HOME=$HOME/.virtualenvs

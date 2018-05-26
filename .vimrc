@@ -1,5 +1,6 @@
 " Reload vimrc while editing vimrc:
 " :so %
+
 let mapleader=","
 
 " The basic stuff.
@@ -17,6 +18,22 @@ set spelllang=en_us
 set display=lastline " for long lines.
 set linebreak " break lines on word boundaries, not in the middle of words.
 
+" jump to the last position when reopening a file
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+
+" indent by file type 
+filetype plugin indent on
+
+" make backspace work 'as expected'
+set nocompatible
+set backspace=indent,eol,start
+
+" movements for long lines
+nnoremap j gj
+nnoremap k gk
+nnoremap <down> gj
+nnoremap <up> gk
+
 " Set spelling for markdown and latex
 autocmd FileType markdown setlocal spell
 autocmd FileType tex setlocal spell
@@ -25,11 +42,15 @@ autocmd FileType tex setlocal spell
 hi Visual cterm=NONE ctermfg=black ctermbg=yellow
 
 " Set background color of current line.
-"set cursorline
-"hi CursorLine cterm=NONE ctermfg=NONE ctermbg=239
+set cursorline
+hi CursorLine cterm=NONE ctermfg=NONE ctermbg=251
 
 " Set fortran highlighting to free source, not fixed.
 let fortran_free_source=1
+
+" Makefile gets tabs, not spaces.
+autocmd FileType make setlocal noexpandtab
+
 
 " Set highlighting for f2py interface files to Fortran.
 au BufReadPost *.pyf set syntax=fortran
@@ -42,3 +63,14 @@ hi ColorColumn ctermbg=230
 " but useful for big ones with classes, etc.
 " set foldmethod=indent
 " set foldnestmax=2
+
+" File explorer options
+let g:netrw_banner = 0
+let g:netrw_winsize = 15 " % of the window
+let g:netrw_liststyle = 3 " tree style
+let g:netrw_browse_split = 3 " open in newtab
+let g:netrw_list_hide= '^\..*$,.*\.swp$,.*\.pyc'
+" augroup ProjectDrawer
+"   autocmd!
+"   autocmd VimEnter * :Vexplore
+" augroup END
